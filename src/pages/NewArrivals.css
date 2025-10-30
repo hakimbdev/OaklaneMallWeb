@@ -1,0 +1,54 @@
+.new-arrivals-header {
+  background: linear-gradient(135deg, var(--oak-brown), var(--deep-navy));
+  color: var(--white);
+  padding: var(--spacing-lg) 0;
+  text-align: center;
+}
+
+.new-arrivals-header h1 {
+  color: var(--white);
+  margin-bottom: var(--spacing-sm);
+}
+
+.new-arrivals-header p {
+  font-size: 1.2rem;
+  color: var(--ivory-white);
+  margin-bottom: var(--spacing-md);
+}
+
+.arrival-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  color: var(--white);
+  font-weight: 500;
+}
+
+.arrival-badge svg {
+  color: var(--ivory-white);
+}
+
+.new-arrivals-content {
+  padding: var(--spacing-lg) var(--spacing-md);
+}
+
+.cta-section {
+  background-color: var(--ivory-white);
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+  margin-top: var(--spacing-lg);
+}
+
+.cta-section h2 {
+  margin-bottom: var(--spacing-sm);
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-md);
+}
+
