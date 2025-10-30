@@ -52,3 +52,37 @@
   margin-bottom: var(--spacing-md);
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+  .new-arrivals-header {
+    padding: var(--spacing-md) 0;
+  }
+
+  .new-arrivals-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .new-arrivals-header p {
+    font-size: 1.1rem;
+  }
+
+  .cta-section {
+    padding: var(--spacing-lg) 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .new-arrivals-header h1 {
+    font-size: 2rem;
+  }
+
+  .new-arrivals-header p {
+    font-size: 1rem;
+  }
+
+  .arrival-badge {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+

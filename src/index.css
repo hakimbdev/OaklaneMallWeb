@@ -66,6 +66,7 @@ a {
   text-decoration: none;
   color: inherit;
   transition: var(--transition);
+  -webkit-tap-highlight-color: transparent;
 }
 
 button {
@@ -73,6 +74,7 @@ button {
   cursor: pointer;
   border: none;
   transition: var(--transition);
+  -webkit-tap-highlight-color: transparent;
 }
 
 img {
@@ -161,25 +163,90 @@ input, textarea, select {
 }
 
 /* Responsive */
+@media (max-width: 968px) {
+  h1 {
+    font-size: 2.75rem;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+}
+
 @media (max-width: 768px) {
   :root {
     --spacing-lg: 3rem;
     --spacing-xl: 4rem;
   }
-  
+
   .container {
     padding: 0 var(--spacing-sm);
   }
-  
+
   .btn {
     padding: 0.875rem 2rem;
     font-size: 0.95rem;
   }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
+  :root {
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+  }
+
   .grid-2, .grid-3, .grid-4 {
     grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.35rem;
+  }
+
+  h4 {
+    font-size: 1.15rem;
+  }
+
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.95rem;
   }
 }
 

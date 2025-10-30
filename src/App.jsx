@@ -9,6 +9,7 @@ import Contact from './pages/Contact'
 import Cart from './pages/Cart'
 import Checkout from './pages/Checkout'
 import './App.css'
+import './mobile-optimizations.css'
 
 function App() {
   return (

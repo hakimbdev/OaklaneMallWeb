@@ -82,13 +82,48 @@
   .newsletter {
     padding: var(--spacing-lg) 0;
   }
-  
+
+  .newsletter-content h2 {
+    font-size: 2rem;
+  }
+
+  .newsletter-content > p {
+    font-size: 1.1rem;
+  }
+
   .newsletter-form {
     flex-direction: column;
   }
-  
+
   .newsletter-form button {
     width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .newsletter {
+    padding: var(--spacing-md) 0;
+  }
+
+  .newsletter-content h2 {
+    font-size: 1.75rem;
+  }
+
+  .newsletter-content > p {
+    font-size: 1rem;
+  }
+
+  .newsletter-form input {
+    padding: 0.875rem 1.25rem;
+    font-size: 0.95rem;
+  }
+
+  .newsletter-form button {
+    padding: 0.875rem 2rem;
+  }
+
+  .newsletter-privacy {
+    font-size: 0.85rem;
   }
 }
 
