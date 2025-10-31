@@ -42,7 +42,7 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0;
   font-family: var(--font-heading);
   font-size: 1.5rem;
   font-weight: 600;
