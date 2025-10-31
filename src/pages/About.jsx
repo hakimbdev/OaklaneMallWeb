@@ -28,7 +28,7 @@ function About() {
     <div className="about">
       <div className="about-hero">
         <div className="container">
-          <h1>About Oaklane Mall</h1>
+          <h1>About Oaklane Store</h1>
           <p className="tagline">Where Everyday Style Finds Its Lane.</p>
         </div>
       </div>
@@ -37,12 +37,12 @@ function About() {
         <div className="container">
           <div className="story-content">
             <div className="story-image">
-              <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80" alt="Oaklane Mall Story" />
+              <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80" alt="Oaklane Store Story" />
             </div>
             <div className="story-text">
               <h2>Our Story</h2>
               <p>
-                Founded with a vision to simplify fashion shopping, Oaklane Mall was born from the belief 
+                Founded with a vision to simplify fashion shopping, Oaklane Store was born from the belief 
                 that everyone deserves access to quality, stylish clothing without the hassle of endless searching.
               </p>
               <p>
@@ -88,7 +88,7 @@ function About() {
 
       <section className="section team-section">
         <div className="container">
-          <h2 className="section-title">Why Choose Oaklane Mall?</h2>
+          <h2 className="section-title">Why Choose Oaklane Store?</h2>
           <div className="features-grid grid grid-3">
             <div className="feature-card">
               <svg width="48" height="48" viewBox="0 0 48 48" fill="none">

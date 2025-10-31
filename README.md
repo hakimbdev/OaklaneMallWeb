@@ -1,8 +1,8 @@
-# Oaklane Mall - E-Commerce Website
+# Oaklane Store - E-Commerce Website
 
 **"Where Everyday Style Finds Its Lane."**
 
-A modern, responsive, and SEO-optimized e-commerce website for Oaklane Mall, a premium clothing retail brand offering high-quality apparel for the modern lifestyle.
+A modern, responsive, and SEO-optimized e-commerce website for Oaklane Store, a premium clothing retail brand offering high-quality apparel for the modern lifestyle.
 
 ## 🌟 Features
 
@@ -171,7 +171,7 @@ The production build is in the `dist` folder. You can deploy this folder to any 
 ### About (/about)
 - Brand story and mission
 - Core values presentation
-- Why choose Oaklane Mall
+- Why choose Oaklane Store
 - Feature highlights
 
 ### Contact (/contact)
@@ -305,9 +305,9 @@ For questions or support, please contact:
 
 ## 📄 License
 
-This project is created for Oaklane Mall. All rights reserved.
+This project is created for Oaklane Store. All rights reserved.
 
 ---
 
-**Built with ❤️ for Oaklane Mall**
+**Built with ❤️ for Oaklane Store**
 

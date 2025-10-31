@@ -1,4 +1,4 @@
-# Deployment Guide for Oaklane Mall
+# Deployment Guide for Oaklane Store
 
 ## ✅ Fixed Issues
 
@@ -101,7 +101,7 @@ After deployment, verify:
 
 ## 🎉 Success!
 
-Your Oaklane Mall website should now deploy successfully on Netlify!
+Your Oaklane Store website should now deploy successfully on Netlify!
 
 **Live URL**: Your site will be available at `https://your-site-name.netlify.app`
 

@@ -40,12 +40,13 @@ function Header() {
           </button>
 
           <Link to="/" className="logo">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="20" cy="20" r="18" stroke="#8b5e3c" strokeWidth="2"/>
-              <path d="M20 8C13.4 8 8 13.4 8 20C8 26.6 13.4 32 20 32C26.6 32 32 26.6 32 20C32 13.4 26.6 8 20 8Z" fill="#8b5e3c"/>
-              <text x="20" y="26" fontSize="16" fill="#f9f6f2" textAnchor="middle" fontFamily="Playfair Display" fontWeight="600">O</text>
-            </svg>
-            <span className="logo-text">Oaklane Mall</span>
+            <img
+              src="https://res.cloudinary.com/da8ptobvx/image/upload/v1761889678/Orange_E-commerce_Online_Store_Logo-removebg-preview_toy3mj.png"
+              alt="Oaklane Store Logo"
+              width="60"
+              height="60"
+            />
+            <span className="logo-text">Oaklane Store</span>
           </Link>
 
           <form className="search-bar" onSubmit={handleSearch}>

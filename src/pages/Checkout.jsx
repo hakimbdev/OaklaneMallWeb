@@ -29,7 +29,7 @@ function Checkout() {
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log('Order submitted:', formData)
-    alert('Order placed successfully! Thank you for shopping with Oaklane Mall.')
+    alert('Order placed successfully! Thank you for shopping with Oaklane Store.')
     navigate('/')
   }
 

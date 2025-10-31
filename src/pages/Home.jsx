@@ -39,7 +39,7 @@ function Home() {
       id: 1,
       name: "Sarah Mitchell",
       location: "New York, NY",
-      text: "Oaklane Mall has become my go-to for quality clothing. The curated collections make shopping effortless, and the quality is always exceptional.",
+      text: "Oaklane Store has become my go-to for quality clothing. The curated collections make shopping effortless, and the quality is always exceptional.",
       rating: 5
     },
     {
@@ -104,10 +104,10 @@ function Home() {
         <div className="container">
           <div className="about-content">
             <div className="about-text">
-              <h2>About Oaklane Mall</h2>
+              <h2>About Oaklane Store</h2>
               <p className="tagline">Where Everyday Style Finds Its Lane.</p>
               <p>
-                At Oaklane Mall, we believe that fashion should be accessible, elegant, and effortless. 
+                At Oaklane Store, we believe that fashion should be accessible, elegant, and effortless. 
                 Our mission is to simplify your shopping experience by offering carefully curated collections 
                 of high-quality apparel that blend timeless style with modern comfort.
               </p>
@@ -118,7 +118,7 @@ function Home() {
               <Link to="/about" className="btn btn-secondary">Learn More About Us</Link>
             </div>
             <div className="about-image">
-              <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=800&q=80" alt="Oaklane Mall Store" />
+              <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=800&q=80" alt="Oaklane Store Store" />
             </div>
           </div>
         </div>
@@ -129,7 +129,7 @@ function Home() {
         <div className="container">
           <h2 className="section-title">What Our Customers Say</h2>
           <p className="section-subtitle">
-            Join thousands of satisfied shoppers who trust Oaklane Mall
+            Join thousands of satisfied shoppers who trust Oaklane Store
           </p>
           
           <div className="testimonials-grid grid grid-3">

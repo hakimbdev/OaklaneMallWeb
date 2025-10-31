@@ -9,7 +9,7 @@ function Footer() {
       <div className="footer-content container">
         <div className="footer-grid">
           <div className="footer-section">
-            <h3 className="footer-logo">Oaklane Mall</h3>
+            <h3 className="footer-logo">Oaklane Store</h3>
             <p className="footer-tagline">Where Everyday Style Finds Its Lane.</p>
             <p className="footer-description">
               Creating a seamless shopping experience where fashion meets comfort, 
@@ -76,14 +76,14 @@ function Footer() {
               </a>
             </div>
             <div className="contact-info">
-              <p><strong>Email:</strong> hello@oaklanemall.com</p>
-              <p><strong>Phone:</strong> 1-800-OAKLANE</p>
+              <p><strong>Email:</strong> hello@oaklanestore.com</p>
+              <p><strong>Phone:</strong> +234-80-62-55-8567</p>
             </div>
           </div>
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {currentYear} Oaklane Mall. All rights reserved.</p>
+          <p>&copy; {currentYear} Oaklane Store. All rights reserved.</p>
           <p className="footer-credit">Designed with elegance and trust.</p>
         </div>
       </div>

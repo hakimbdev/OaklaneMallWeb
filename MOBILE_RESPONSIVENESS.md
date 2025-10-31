@@ -1,7 +1,7 @@
 # Mobile Responsiveness Implementation
 
 ## Overview
-This document outlines all the mobile responsiveness enhancements implemented across the Oaklane Mall e-commerce website.
+This document outlines all the mobile responsiveness enhancements implemented across the Oaklane Store e-commerce website.
 
 ## Key Features Implemented
 
