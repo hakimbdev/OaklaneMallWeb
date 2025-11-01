@@ -16,16 +16,16 @@ function Home() {
     { id: 138, name: "Caps (Kinde)", category: "accessories", gender: "all", price: 17000, image: "https://res.cloudinary.com/da8ptobvx/image/upload/v1761978801/IMG-20250921-WA0058_kohkju.jpg", size: ["One Size"], isNew: true }
   ]
 
-  // Featured products - Flowing Gown collection
+  // Featured products - Flowing Gown collection (Men's Wear)
   const featuredProducts = [
-    { id: 109, name: "Flowing Gown", category: "womens", gender: "women", price: 105000, image: "https://res.cloudinary.com/da8ptobvx/image/upload/v1761977196/IMG-20250925-WA0098_ldukbx.jpg", size: ["XS", "S", "M", "L", "XL"], isNew: true },
-    { id: 110, name: "Flowing Gown", category: "womens", gender: "women", price: 105000, image: "https://res.cloudinary.com/da8ptobvx/image/upload/v1761977195/IMG-20250925-WA0092_zkihwg.jpg", size: ["XS", "S", "M", "L", "XL"], isNew: true },
-    { id: 111, name: "Flowing Gown", category: "womens", gender: "women", price: 105000, image: "https://res.cloudinary.com/da8ptobvx/image/upload/v1761977195/IMG-20250925-WA0097_lyecbg.jpg", size: ["XS", "S", "M", "L", "XL"], isNew: true },
-    { id: 112, name: "Flowing Gown", category: "womens", gender: "women", price: 105000, image: "https://res.cloudinary.com/da8ptobvx/image/upload/v1761977195/IMG-20250925-WA0090_npetzz.jpg", size: ["XS", "S", "M", "L", "XL"], isNew: true },
-    { id: 113, name: "Flowing Gown", category: "womens", gender: "women", price: 105000, image: "https://res.cloudinary.com/da8ptobvx/image/upload/v1761977194/IMG-20250925-WA0096_xakzel.jpg", size: ["XS", "S", "M", "L", "XL"], isNew: true },
-    { id: 114, name: "Flowing Gown", category: "womens", gender: "women", price: 105000, image: "https://res.cloudinary.com/da8ptobvx/image/upload/v1761977194/IMG-20250925-WA0089_lqs5ge.jpg", size: ["XS", "S", "M", "L", "XL"], isNew: true },
-    { id: 115, name: "Flowing Gown", category: "womens", gender: "women", price: 105000, image: "https://res.cloudinary.com/da8ptobvx/image/upload/v1761977194/IMG-20250925-WA0095_tfvtmk.jpg", size: ["XS", "S", "M", "L", "XL"], isNew: true },
-    { id: 116, name: "Flowing Gown", category: "womens", gender: "women", price: 105000, image: "https://res.cloudinary.com/da8ptobvx/image/upload/v1761977194/IMG-20250925-WA0094_gssccx.jpg", size: ["XS", "S", "M", "L", "XL"], isNew: true }
+    { id: 109, name: "Flowing Gown", category: "mens", gender: "men", price: 105000, image: "https://res.cloudinary.com/da8ptobvx/image/upload/v1761977196/IMG-20250925-WA0098_ldukbx.jpg", size: ["XS", "S", "M", "L", "XL"], isNew: true },
+    { id: 110, name: "Flowing Gown", category: "mens", gender: "men", price: 105000, image: "https://res.cloudinary.com/da8ptobvx/image/upload/v1761977195/IMG-20250925-WA0092_zkihwg.jpg", size: ["XS", "S", "M", "L", "XL"], isNew: true },
+    { id: 111, name: "Flowing Gown", category: "mens", gender: "men", price: 105000, image: "https://res.cloudinary.com/da8ptobvx/image/upload/v1761977195/IMG-20250925-WA0097_lyecbg.jpg", size: ["XS", "S", "M", "L", "XL"], isNew: true },
+    { id: 112, name: "Flowing Gown", category: "mens", gender: "men", price: 105000, image: "https://res.cloudinary.com/da8ptobvx/image/upload/v1761977195/IMG-20250925-WA0090_npetzz.jpg", size: ["XS", "S", "M", "L", "XL"], isNew: true },
+    { id: 113, name: "Flowing Gown", category: "mens", gender: "men", price: 105000, image: "https://res.cloudinary.com/da8ptobvx/image/upload/v1761977194/IMG-20250925-WA0096_xakzel.jpg", size: ["XS", "S", "M", "L", "XL"], isNew: true },
+    { id: 114, name: "Flowing Gown", category: "mens", gender: "men", price: 105000, image: "https://res.cloudinary.com/da8ptobvx/image/upload/v1761977194/IMG-20250925-WA0089_lqs5ge.jpg", size: ["XS", "S", "M", "L", "XL"], isNew: true },
+    { id: 115, name: "Flowing Gown", category: "mens", gender: "men", price: 105000, image: "https://res.cloudinary.com/da8ptobvx/image/upload/v1761977194/IMG-20250925-WA0095_tfvtmk.jpg", size: ["XS", "S", "M", "L", "XL"], isNew: true },
+    { id: 116, name: "Flowing Gown", category: "mens", gender: "men", price: 105000, image: "https://res.cloudinary.com/da8ptobvx/image/upload/v1761977194/IMG-20250925-WA0094_gssccx.jpg", size: ["XS", "S", "M", "L", "XL"], isNew: true }
   ]
 
   const collections = [
@@ -147,9 +147,9 @@ function Home() {
       {/* Featured Products - Flowing Gown */}
       <section className="section featured-products">
         <div className="container">
-          <h2 className="section-title">New Arrivals - Flowing Gown Collection</h2>
+          <h2 className="section-title">New Arrivals - Flowing Gown (Men's Collection)</h2>
           <p className="section-subtitle">
-            Discover our latest elegant flowing gowns, perfect for any special occasion
+            Discover our latest elegant flowing gowns for men, perfect for any special occasion
           </p>
 
           <div className="products-grid grid grid-4">
