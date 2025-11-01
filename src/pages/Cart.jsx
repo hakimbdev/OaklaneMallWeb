@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { useCurrency } from '../context/CurrencyContext'
 import './Cart.css'
 
 function Cart() {
+  const { formatPrice } = useCurrency()
   const [cartItems, setCartItems] = useState([
     {
       id: 1,
@@ -62,7 +64,7 @@ function Cart() {
                   <div className="item-details">
                     <h3>{item.name}</h3>
                     <p className="item-meta">Size: {item.size} | Color: {item.color}</p>
-                    <p className="item-price">${item.price.toFixed(2)}</p>
+                    <p className="item-price">{formatPrice(item.price)}</p>
                   </div>
 
                   <div className="item-quantity">
@@ -72,7 +74,7 @@ function Cart() {
                   </div>
 
                   <div className="item-total">
-                    <p>${(item.price * item.quantity).toFixed(2)}</p>
+                    <p>{formatPrice(item.price * item.quantity)}</p>
                   </div>
 
                   <button className="item-remove" onClick={() => removeItem(item.id)}>
@@ -86,32 +88,32 @@ function Cart() {
 
             <div className="cart-summary">
               <h2>Order Summary</h2>
-              
+
               <div className="summary-row">
                 <span>Subtotal</span>
-                <span>${subtotal.toFixed(2)}</span>
+                <span>{formatPrice(subtotal)}</span>
               </div>
-              
+
               <div className="summary-row">
                 <span>Shipping</span>
-                <span>{shipping === 0 ? 'FREE' : `$${shipping.toFixed(2)}`}</span>
+                <span>{shipping === 0 ? 'FREE' : formatPrice(shipping)}</span>
               </div>
-              
+
               <div className="summary-row">
                 <span>Tax</span>
-                <span>${tax.toFixed(2)}</span>
+                <span>{formatPrice(tax)}</span>
               </div>
-              
+
               <div className="summary-divider"></div>
-              
+
               <div className="summary-row summary-total">
                 <span>Total</span>
-                <span>${total.toFixed(2)}</span>
+                <span>{formatPrice(total)}</span>
               </div>
 
               {shipping > 0 && (
                 <p className="shipping-note">
-                  Add ${(100 - subtotal).toFixed(2)} more for free shipping!
+                  Add {formatPrice(100 - subtotal)} more for free shipping!
                 </p>
               )}
 

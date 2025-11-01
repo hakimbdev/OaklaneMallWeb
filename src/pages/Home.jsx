@@ -1,8 +1,33 @@
 import { Link } from 'react-router-dom'
 import Newsletter from '../components/Newsletter'
+import ProductCard from '../components/ProductCard'
 import './Home.css'
 
 function Home() {
+  // Featured products - Caps (Kinde) collection
+  const capsProducts = [
+    { id: 131, name: "Caps (Kinde)", category: "accessories", gender: "all", price: 17000, image: "https://res.cloudinary.com/da8ptobvx/image/upload/v1761978802/IMG-20250921-WA0066_pet4fz.jpg", size: ["One Size"], isNew: true },
+    { id: 132, name: "Caps (Kinde)", category: "accessories", gender: "all", price: 17000, image: "https://res.cloudinary.com/da8ptobvx/image/upload/v1761978802/IMG-20250921-WA0062_v4jpgc.jpg", size: ["One Size"], isNew: true },
+    { id: 133, name: "Caps (Kinde)", category: "accessories", gender: "all", price: 17000, image: "https://res.cloudinary.com/da8ptobvx/image/upload/v1761978802/IMG-20250921-WA0065_m1t5zg.jpg", size: ["One Size"], isNew: true },
+    { id: 134, name: "Caps (Kinde)", category: "accessories", gender: "all", price: 17000, image: "https://res.cloudinary.com/da8ptobvx/image/upload/v1761978802/IMG-20250921-WA0059_zkgf3u.jpg", size: ["One Size"], isNew: true },
+    { id: 135, name: "Caps (Kinde)", category: "accessories", gender: "all", price: 17000, image: "https://res.cloudinary.com/da8ptobvx/image/upload/v1761978802/IMG-20250921-WA0061_fw9pn2.jpg", size: ["One Size"], isNew: true },
+    { id: 136, name: "Caps (Kinde)", category: "accessories", gender: "all", price: 17000, image: "https://res.cloudinary.com/da8ptobvx/image/upload/v1761978802/IMG-20250921-WA0060_tu3was.jpg", size: ["One Size"], isNew: true },
+    { id: 137, name: "Caps (Kinde)", category: "accessories", gender: "all", price: 17000, image: "https://res.cloudinary.com/da8ptobvx/image/upload/v1761978801/IMG-20250921-WA0057_lbaxtv.jpg", size: ["One Size"], isNew: true },
+    { id: 138, name: "Caps (Kinde)", category: "accessories", gender: "all", price: 17000, image: "https://res.cloudinary.com/da8ptobvx/image/upload/v1761978801/IMG-20250921-WA0058_kohkju.jpg", size: ["One Size"], isNew: true }
+  ]
+
+  // Featured products - Flowing Gown collection
+  const featuredProducts = [
+    { id: 109, name: "Flowing Gown", category: "womens", gender: "women", price: 105000, image: "https://res.cloudinary.com/da8ptobvx/image/upload/v1761977196/IMG-20250925-WA0098_ldukbx.jpg", size: ["XS", "S", "M", "L", "XL"], isNew: true },
+    { id: 110, name: "Flowing Gown", category: "womens", gender: "women", price: 105000, image: "https://res.cloudinary.com/da8ptobvx/image/upload/v1761977195/IMG-20250925-WA0092_zkihwg.jpg", size: ["XS", "S", "M", "L", "XL"], isNew: true },
+    { id: 111, name: "Flowing Gown", category: "womens", gender: "women", price: 105000, image: "https://res.cloudinary.com/da8ptobvx/image/upload/v1761977195/IMG-20250925-WA0097_lyecbg.jpg", size: ["XS", "S", "M", "L", "XL"], isNew: true },
+    { id: 112, name: "Flowing Gown", category: "womens", gender: "women", price: 105000, image: "https://res.cloudinary.com/da8ptobvx/image/upload/v1761977195/IMG-20250925-WA0090_npetzz.jpg", size: ["XS", "S", "M", "L", "XL"], isNew: true },
+    { id: 113, name: "Flowing Gown", category: "womens", gender: "women", price: 105000, image: "https://res.cloudinary.com/da8ptobvx/image/upload/v1761977194/IMG-20250925-WA0096_xakzel.jpg", size: ["XS", "S", "M", "L", "XL"], isNew: true },
+    { id: 114, name: "Flowing Gown", category: "womens", gender: "women", price: 105000, image: "https://res.cloudinary.com/da8ptobvx/image/upload/v1761977194/IMG-20250925-WA0089_lqs5ge.jpg", size: ["XS", "S", "M", "L", "XL"], isNew: true },
+    { id: 115, name: "Flowing Gown", category: "womens", gender: "women", price: 105000, image: "https://res.cloudinary.com/da8ptobvx/image/upload/v1761977194/IMG-20250925-WA0095_tfvtmk.jpg", size: ["XS", "S", "M", "L", "XL"], isNew: true },
+    { id: 116, name: "Flowing Gown", category: "womens", gender: "women", price: 105000, image: "https://res.cloudinary.com/da8ptobvx/image/upload/v1761977194/IMG-20250925-WA0094_gssccx.jpg", size: ["XS", "S", "M", "L", "XL"], isNew: true }
+  ]
+
   const collections = [
     {
       id: 1,
@@ -79,7 +104,7 @@ function Home() {
           <p className="section-subtitle">
             Explore our carefully curated selections designed for your lifestyle
           </p>
-          
+
           <div className="collections-grid grid grid-4">
             {collections.map(collection => (
               <Link to={collection.link} key={collection.id} className="collection-card">
@@ -95,6 +120,46 @@ function Home() {
                 </div>
               </Link>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Caps (Kinde) Collection */}
+      <section className="section featured-products">
+        <div className="container">
+          <h2 className="section-title">New Arrivals - Caps (Kinde)</h2>
+          <p className="section-subtitle">
+            Stylish caps to complete your look - Perfect for any casual occasion
+          </p>
+
+          <div className="products-grid grid grid-4">
+            {capsProducts.map(product => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+
+          <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+            <Link to="/new-arrivals" className="btn btn-primary">View All New Arrivals</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Products - Flowing Gown */}
+      <section className="section featured-products">
+        <div className="container">
+          <h2 className="section-title">New Arrivals - Flowing Gown Collection</h2>
+          <p className="section-subtitle">
+            Discover our latest elegant flowing gowns, perfect for any special occasion
+          </p>
+
+          <div className="products-grid grid grid-4">
+            {featuredProducts.map(product => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+
+          <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+            <Link to="/new-arrivals" className="btn btn-primary">View All New Arrivals</Link>
           </div>
         </div>
       </section>

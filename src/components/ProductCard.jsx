@@ -1,8 +1,10 @@
 import { useState } from 'react'
+import { useCurrency } from '../context/CurrencyContext'
 import './ProductCard.css'
 
 function ProductCard({ product }) {
   const [isWishlisted, setIsWishlisted] = useState(false)
+  const { formatPrice } = useCurrency()
 
   const handleAddToCart = () => {
     console.log('Added to cart:', product)
@@ -16,7 +18,7 @@ function ProductCard({ product }) {
     <div className="product-card">
       <div className="product-image">
         <img src={product.image} alt={product.name} />
-        <button 
+        <button
           className={`wishlist-btn ${isWishlisted ? 'active' : ''}`}
           onClick={toggleWishlist}
           aria-label="Add to wishlist"
@@ -29,12 +31,12 @@ function ProductCard({ product }) {
           <button className="quick-view-btn">Quick View</button>
         </div>
       </div>
-      
+
       <div className="product-info">
         <h3 className="product-name">{product.name}</h3>
         <p className="product-category">{product.category.charAt(0).toUpperCase() + product.category.slice(1)}</p>
         <div className="product-footer">
-          <span className="product-price">${product.price.toFixed(2)}</span>
+          <span className="product-price">{formatPrice(product.price)}</span>
           <button className="add-to-cart-btn" onClick={handleAddToCart}>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
               <path d="M7 2L5 5M15 5l-2-3M5 5h10l1.5 7.5H3.5L5 5zM7 17.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2zM14 17.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>

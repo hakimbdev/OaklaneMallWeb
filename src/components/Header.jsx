@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import CurrencySwitcher from './CurrencySwitcher'
 import './Header.css'
 
 function Header() {
@@ -64,6 +65,7 @@ function Header() {
           </form>
 
           <div className="header-actions">
+            <CurrencySwitcher />
             <button className="icon-btn" aria-label="Account">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>

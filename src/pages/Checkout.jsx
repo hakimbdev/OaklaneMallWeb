@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useCurrency } from '../context/CurrencyContext'
 import './Checkout.css'
 
 function Checkout() {
   const navigate = useNavigate()
+  const { formatPrice } = useCurrency()
   const [formData, setFormData] = useState({
     email: '',
     firstName: '',
@@ -225,7 +227,7 @@ function Checkout() {
           </section>
 
           <button type="submit" className="btn btn-primary place-order-btn">
-            Place Order - ${orderSummary.total.toFixed(2)}
+            Place Order - {formatPrice(orderSummary.total)}
           </button>
         </form>
 
@@ -239,7 +241,7 @@ function Checkout() {
                   <span className="item-name">{item.name}</span>
                   <span className="item-qty">Qty: {item.quantity}</span>
                 </div>
-                <span className="item-price">${(item.price * item.quantity).toFixed(2)}</span>
+                <span className="item-price">{formatPrice(item.price * item.quantity)}</span>
               </div>
             ))}
           </div>
@@ -248,24 +250,24 @@ function Checkout() {
 
           <div className="summary-row">
             <span>Subtotal</span>
-            <span>${orderSummary.subtotal.toFixed(2)}</span>
+            <span>{formatPrice(orderSummary.subtotal)}</span>
           </div>
 
           <div className="summary-row">
             <span>Shipping</span>
-            <span>{orderSummary.shipping === 0 ? 'FREE' : `$${orderSummary.shipping.toFixed(2)}`}</span>
+            <span>{orderSummary.shipping === 0 ? 'FREE' : formatPrice(orderSummary.shipping)}</span>
           </div>
 
           <div className="summary-row">
             <span>Tax</span>
-            <span>${orderSummary.tax.toFixed(2)}</span>
+            <span>{formatPrice(orderSummary.tax)}</span>
           </div>
 
           <div className="summary-divider"></div>
 
           <div className="summary-row summary-total">
             <span>Total</span>
-            <span>${orderSummary.total.toFixed(2)}</span>
+            <span>{formatPrice(orderSummary.total)}</span>
           </div>
         </aside>
       </div>
